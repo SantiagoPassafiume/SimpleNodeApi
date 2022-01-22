@@ -1,7 +1,7 @@
 "use strict";
 
-const { EventEmitter } = require("events");
+const express = require("express");
 
-const eventEmitter = new EventEmitter();
+const app = express();
 
-eventEmitter.on("lunch");
+app.get("/", (request, response) => {});
